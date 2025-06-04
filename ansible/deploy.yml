@@ -5,8 +5,8 @@
   tasks:
    - name: Copy war file
      copy:
-      src:
-      dest:
+      src: "/var/snap/jenkins/4865/workspace/AnsibleWebApp/target/AnsibleWebApp.war"
+      dest: "/opt/tomcat/webapps/AnsibleWebApp.war"
       remote_src: no
    - name: restart tomcat
      systemd:
